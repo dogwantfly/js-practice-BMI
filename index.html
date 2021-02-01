@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 計算</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="bg-dark header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>
+                <a href="index.html" class="logo">BMI Calculator</a>
+            </h1>
+            <div class="text-primary form-group">
+                <label class="mb-1" for="height">身高 cm</label>
+                <input class="w-100 mb-5" type="number" name="" id="height" placeholder="請輸入身高">
+                <label class="mb-1" for="weight">體重 kg</label>
+                <input class="w-100" type="number" name="" id="weight" placeholder="請輸入體重">
+            </div>
+            <div class="result-btn-group">
+                <button class="result-btn">
+                    看結果
+                </button>
+                <a href="#" class="recalculate justify-content-center align-items-center">
+                    <img src="./assets/icons_loop.png" alt="">
+                </a>
+                <p class="result-btn-text">理想</p>
+            </div>
+        </div>
+    </header>
+    <main class="main text-center text-dark">
+        <div class="container">
+            <h2>BMI 紀錄</h2>
+            <ul class="bmi-result-list">
+    
+            </ul>    
+        </div>
+    </main>
+    <footer class="footer bg-primary text-center">
+        <a href="#">
+            <img src="./assets/BMICLogofooter.png" alt="">
+        </a>
+    </footer>
+    <script src="js/all.js"></script>
+</body>
+</html> 
