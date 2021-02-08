@@ -9,6 +9,9 @@ a{
     text-decoration: none;
     display: block;
 }
+button{
+    border: none;
+}
 .container{
     max-width: 720px;
     margin: 0 auto;
@@ -43,6 +46,9 @@ a{
     padding-left: 10px;
     text-align: left;
     background-color: #fff;
+}
+.bmi-result-item {
+    padding-right: 10px;
 }
 .bmi-result-item p{
     width: 15%;
@@ -106,7 +112,16 @@ a{
     margin-bottom: 16px;
 }
 .mb-5{
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+}
+.notice{
+    color: #fff;
+    position: absolute;
+    font-size: 14px;
+    display: none;
+}
+.notice.show{
+    display: block;
 }
 .result-btn{
     border-radius: 50%;
@@ -179,6 +194,30 @@ a{
 .main h2{
     font-size: 24px;
     margin-bottom: 20px;
+}
+.delete-all{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #424242;
+    visibility: hidden;
+}
+.delete-all.btn-show{
+    visibility: visible;
+}
+.delete-all:hover{
+    color: rgb(218, 104, 11);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+.remove-btn{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.remove-btn:hover{
+    color: rgb(218, 104, 11);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.123);
 }
 .bg-primary{
     background-color: #FFD366;

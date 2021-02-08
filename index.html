@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI 計算</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
 <body>
     <header class="bg-dark header">
@@ -14,10 +16,16 @@
                 <a href="index.html" class="logo">BMI Calculator</a>
             </h1>
             <div class="text-primary form-group">
-                <label class="mb-1" for="height">身高 cm</label>
-                <input class="w-100 mb-5" type="number" name="" id="height" placeholder="請輸入身高">
-                <label class="mb-1" for="weight">體重 kg</label>
-                <input class="w-100" type="number" name="" id="weight" placeholder="請輸入體重">
+                <div class="input-group required mb-5">
+                    <label class="mb-1" for="height">身高 cm</label>
+                    <input class="w-100 mb-1" type="number" name="" id="height" placeholder="請輸入身高">
+                    <p class="notice">請輸入身高</p>
+                </div>
+                <div class="input-group required">
+                    <label class="mb-1" for="weight">體重 kg</label>
+                    <input class="w-100 mb-1" type="number" name="" id="weight" placeholder="請輸入體重">
+                    <p class="notice">請輸入體重</p>
+                </div>
             </div>
             <div class="result-btn-group">
                 <button class="result-btn">
@@ -33,9 +41,11 @@
     <main class="main text-center text-dark">
         <div class="container">
             <h2>BMI 紀錄</h2>
+            <button class="delete-all bg-primary mb-3">全部刪除</button>
             <ul class="bmi-result-list">
     
             </ul>    
+           
         </div>
     </main>
     <footer class="footer bg-primary text-center">
